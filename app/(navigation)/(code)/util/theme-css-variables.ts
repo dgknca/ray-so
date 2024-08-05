@@ -1,7 +1,5 @@
 // Adapted from https://github.com/shikijs/shiki/blob/main/packages/shiki/src/theme-css-variables.ts
 
-import type { ThemeRegistration } from "@shikijs/core";
-
 export interface CssVariablesThemeOptions {
   /**
    * Theme name. Need to unique if multiple css variables themes are created
@@ -38,7 +36,7 @@ export interface CssVariablesThemeOptions {
  * @experimental This API is experimental and may change without following semver
  * @see https://shiki.style/guide/theme-colors#css-variables-theme
  */
-export function createCssVariablesTheme(options: CssVariablesThemeOptions = {}): ThemeRegistration {
+export function createCssVariablesTheme(options: CssVariablesThemeOptions = {}): any {
   const { name = "css-variables", variablePrefix = "--shiki-", fontStyle = true } = options;
 
   const variable = (name: string) => {
@@ -46,7 +44,7 @@ export function createCssVariablesTheme(options: CssVariablesThemeOptions = {}):
     return `var(${variablePrefix}${name})`;
   };
 
-  const theme: ThemeRegistration = {
+  const theme: any = {
     name,
     type: "dark",
     colors: {
