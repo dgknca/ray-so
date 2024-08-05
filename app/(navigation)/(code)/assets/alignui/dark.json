@@ -90,7 +90,7 @@
     {
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "hsl(var(--red-400, 355 100% 70%))"
+        "foreground": "#85e89d"
       }
     },
     {
@@ -108,7 +108,7 @@
     {
       "scope": ["storage.modifier.package", "storage.modifier.import", "storage.type.java"],
       "settings": {
-        "foreground": "hsl(var(--blue-600, 228 80% 56%))"
+        "foreground": "#e1e4e8"
       }
     },
     {
@@ -120,13 +120,13 @@
     {
       "scope": "support",
       "settings": {
-        "foreground": "hsl(var(--yellow-800, 42 100% 50%))"
+        "foreground": "#79b8ff"
       }
     },
     {
       "scope": "meta.property-name",
       "settings": {
-        "foreground": "hsl(var(--blue-500, 228 100% 60%))"
+        "foreground": "#79b8ff"
       }
     },
     {
