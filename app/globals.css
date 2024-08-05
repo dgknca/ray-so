@@ -194,7 +194,7 @@ svg {
 }
 
 [data-theme="dark"] {
-  --frame-background: rgba(0, 0, 0, 0.75);
+  --frame-background: hsl(227 17% 16%);
   --frame-control-color: rgba(255, 255, 255, 0.2);
   --frame-title-placeholder-color: rgba(255, 255, 255, 0.3);
   --frame-title-color: rgba(255, 255, 255, 0.6);
