@@ -11,6 +11,8 @@ import SupabaseLogo from "../assets/supabase.svg";
 import SupabaseLogoUrl from "../assets/supabase.svg?url";
 import TailwindLogo from "../assets/tailwind.svg";
 import TailwindLogoUrl from "../assets/tailwind.svg?url";
+import AlignUILogo from "../assets/alignui.svg";
+import AlignUILogoUrl from "../assets/alignui.svg?url";
 import { showLineNumbersAtom } from ".";
 import { createCssVariablesTheme } from "../util/theme-css-variables";
 import { BASE_URL } from "@/utils/common";
@@ -86,6 +88,33 @@ export type Theme = {
 };
 
 export const THEMES: { [index: string]: Theme } = {
+  alignui: {
+    id: "alignui",
+    name: "AlignUI",
+    background: {
+      from: "#36B6F0",
+      to: "#36B6F0",
+    },
+    icon: AlignUILogo,
+    iconUrl: `${BASE_URL}${AlignUILogoUrl.src}`,
+    partner: true,
+    lineNumbers: true,
+    font: "fira-code",
+    syntax: {
+      light: convertToShikiTheme({
+        foreground: "#000",
+        highlightBorder: "#0484C7",
+        highlight: "rgba(25,147,211,0.10)",
+        highlightHover: "rgba(25,147,211,0.06)",
+      }),
+      dark: convertToShikiTheme({
+        foreground: "#fff",
+        highlightBorder: "#C1B2F9",
+        highlight: "rgba(193,178,249,0.12)",
+        highlightHover: "rgba(193,178,249,0.07)",
+      }),
+    },
+  },
   vercel: {
     id: "vercel",
     name: "Vercel",

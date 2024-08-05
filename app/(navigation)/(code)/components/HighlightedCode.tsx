@@ -19,7 +19,7 @@ const HighlightedCode: React.FC<PropTypes> = ({ selectedLanguage, code }) => {
   const highlightedLines = useAtomValue(highlightedLinesAtom);
   const darkMode = useAtomValue(darkModeAtom);
   const theme = useAtomValue(themeAtom);
-  const themeName = theme.id === "tailwind" ? (darkMode ? "tailwind-dark" : "tailwind-light") : "css-variables";
+  const themeName = theme.id === "alignui" ? (darkMode ? "alignui-dark" : "alignui-light") : "css-variables";
 
   useEffect(() => {
     const generateHighlightedHtml = async () => {
