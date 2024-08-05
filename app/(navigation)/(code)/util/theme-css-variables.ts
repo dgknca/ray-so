@@ -235,9 +235,10 @@ export function createCssVariablesTheme(options: CssVariablesThemeOptions = {}):
   };
 
   if (!fontStyle) {
+    // @ts-ignore
     theme.tokenColors = theme.tokenColors?.map((tokenColor) => {
       if (tokenColor.settings?.fontStyle)
-        // @ts-expect-error force delete readonly property
+        // @ts-ignore
         delete tokenColor.settings.fontStyle;
       return tokenColor;
     });
