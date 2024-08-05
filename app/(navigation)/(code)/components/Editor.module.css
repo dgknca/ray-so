@@ -145,3 +145,9 @@
   font-family: var(--font-geist-mono), "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", monospace;
   font-weight: 400;
 }
+
+.default {
+  font-family: "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New",
+    monospace;
+  font-weight: 400;
+}

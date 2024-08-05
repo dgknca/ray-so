@@ -92,14 +92,14 @@ export const THEMES: { [index: string]: Theme } = {
     id: "alignui",
     name: "AlignUI",
     background: {
-      from: "#36B6F0",
-      to: "#36B6F0",
+      from: "#222530",
+      to: "#222530",
     },
     icon: AlignUILogo,
     iconUrl: `${BASE_URL}${AlignUILogoUrl.src}`,
     partner: true,
     lineNumbers: true,
-    font: "fira-code",
+    font: "default",
     syntax: {
       light: convertToShikiTheme({
         foreground: "#000",

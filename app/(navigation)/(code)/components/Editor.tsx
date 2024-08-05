@@ -240,6 +240,8 @@ function Editor() {
           ? styles.geistMono
           : themeFont === "ibm-plex-mono"
           ? styles.ibmPlexMono
+          : themeFont === "default"
+          ? styles.default
           : themeFont === "fira-code"
           ? styles.firaCode
           : styles.jetBrainsMono,
